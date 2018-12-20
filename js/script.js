@@ -35,40 +35,19 @@ for (var i = 0; i < squares.length; i++) {
 var resetbtn = document.getElementById("reset")
 
 resetbtn.addEventListener("click", function(){
-  var tr = document.getElementsByTagName("tr");
-  var plots = document.getElementsByTagName("td");
-  if (plots.length !=0) {
-    // tr.removeChild(plots[]);
-    squares.innerHTML = "";
+for (var i = 0; i < squares.length; i++) {
+    squares[i].innerHTML = "";
+    squares[i].classList.remove("X","0");
     counter = 0;
-
-    }
+  }
 })
 
+var function detectWin() {
 
-//
-// var winConditions = [ /* what you defined */ ];
-//
-// function winTest(board, side) {
-//   for(var i = 0; i < winConditions.length; i++) {
-//     var sum = 0;
-//     var w = winConditions[i];
-//
-//     for(var b = 0; b < w.length; b++) {
-//       if(board[w[b]].textcontent === side) {
-//         sum++
-//       }
-//     }
-//
-//     if(sum === 3) {
-//       return true;
-//     }
-//   }
-//   return false;
-// }
-//
-// // then, call it :
-// var result = winTest(board, 'X');
+}
+
+
+
 
 
 
